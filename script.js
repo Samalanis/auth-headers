@@ -39,7 +39,7 @@ function showResults(responseJson) {
   console.log(responseJson);
   for (let i = 0; i < responseJson.length; i++) {
     $('#results-list').append(
-    `<li><h3><a href="${responseJson[i].html_url}"></a>${responseJson[i].name}</h3></li>`
+    `<li><h3>${responseJson[i].name} ${responseJson[i].html_url}</h3></li>`
   )};
 };
 
